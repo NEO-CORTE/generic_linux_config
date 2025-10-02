@@ -105,3 +105,19 @@ fi
 if [ -f ~/.zsh_aliases ]; then
   source ~/.zsh_aliases
 fi
+
+ssh-add -l &>/dev/null
+if [ "$?" = 2 ]; then
+  test -r ~/.ssh-agent && \
+    eval "$(<~/.ssh-agent)" > /dev/null
+  ssh-add -l &>/dev/null
+  if [ "$?" = 2 ]; then 
+    (umask 066; ssh-agent > ~/.ssh-agent)
+    eval "$(<~/.ssh-agent)" > /dev/null
+  fi
+fi
+
+ssh-add -l &>/dev/null
+if [ "$?" = 1 ]; then
+  ssh-add ~/.ssh/github
+fi
