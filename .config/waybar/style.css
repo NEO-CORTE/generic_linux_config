@@ -1,0 +1,54 @@
+@define-color foreground #eeeeee;
+@define-color foreground-inactive #aaaaaa;
+@define-color background #000000;
+@define-color active #50fa7b;
+
+* {
+    all: unset;
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+}
+
+#waybar {
+    color: @foreground;
+    background-color: @background;
+}
+
+#workspaces button {
+    color: @foreground;
+    padding-right: 0.6em;
+    padding-left: 0.2em;
+}
+
+#workspaces button.active:hover{
+    color: @foreground;
+}
+
+#workspaces button:hover {
+    color: @active;
+}
+
+#workspaces button.empty {
+    color: @foreground-inactive;
+}
+
+#memory,
+#custom-platform-profile {
+    padding-left: 1em
+}
+
+#wireplumber,
+#battery,
+#idle_inhibitor,
+#language,
+#network,
+#bluetooth,
+#tray {
+    padding-right: 1em 
+}
+
+#temperature{
+  padding-left: 1em
+}

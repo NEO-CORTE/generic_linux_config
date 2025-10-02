@@ -1,0 +1,6 @@
+# General
+alias ll="ls -al"
+
+
+# Connectivity
+alias btc="bluetuith"
