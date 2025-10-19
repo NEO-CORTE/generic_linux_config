@@ -1,8 +1,8 @@
 #!/bin/bash
 
-OPTIONS="Hyprland\nRofi\nFastFetch\nlf\nwaybar\nkitty"
+OPTIONS="Hyprland\nRofi\nFastFetch\nlf\nWaybar\nKitty\nWalker"
 
-SELECTION=$(echo -e "$OPTIONS" | rofi -dmenu -p "Configuration: ")
+SELECTION=$(echo -e "$OPTIONS" | walker --dmenu -p "Configuration: ")
 
 case "$SELECTION" in
 "Hyprland")
@@ -17,10 +17,14 @@ case "$SELECTION" in
 "lf")
   kitty nvim ~/.config/lf/
   ;;
-"waybar")
+"Waybar")
   kitty nvim ~/.config/waybar/
   ;;
-"kitty")
+"Kitty")
   kitty nvim ~/.config/kitty/
   ;;
+"Walker")
+  kitty nvim ~/.config/walker/
+  ;;
+
 esac

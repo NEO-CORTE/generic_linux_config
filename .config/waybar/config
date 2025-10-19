@@ -4,7 +4,7 @@
     "height": 24,
     "spacing": 5,
 
-    "modules-left": ["hyprland/workspaces", "custom/platform-profile", "temperature"],
+    "modules-left": ["hyprland/workspaces", "custom/platform-profile", "temperature", "cpu"],
     "modules-center": ["clock"],
     "modules-right": ["wireplumber", "battery", "memory", "network", "tray"],
 
@@ -51,6 +51,12 @@
 
     "temperature": {
         "format": "{temperatureC}°C"
+    },
+    "cpu": {
+	    "interval": 2,
+	    "format": "{avg_frequency}MHz ",
+      "min-length": 20,
+	    "max-length": 25
     },
 
     "network": {

@@ -2,7 +2,7 @@
 
 OPTIONS="Shutdown\nReboot\nSuspend\nLogout"
 
-SELECTION=$(echo -e "$OPTIONS" | rofi -dmenu -p "Power Menu: ")
+SELECTION=$(echo -e "$OPTIONS" | walker --dmenu -p "Power Menu: ")
 
 case "$SELECTION" in
 "Shutdown")

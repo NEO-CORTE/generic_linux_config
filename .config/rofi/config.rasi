@@ -1,4 +1,8 @@
 
 //@theme "/usr/share/rofi/themes/fancy.rasi"
 
-@theme "/usr/share/rofi/themes/Monokai.rasi"
+//@theme "/usr/share/rofi/themes/Monokai.rasi"
+
+//@theme "/usr/share/rofi/themes/dmenu.rasi"
+
+@theme "/usr/share/rofi/themes/sidebar.rasi"
