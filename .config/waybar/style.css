@@ -49,6 +49,10 @@
     padding-right: 1em 
 }
 
+#pulseaudio {
+    margin-right: 10
+}
+
 #temperature{
   padding-left: 1em
 }
