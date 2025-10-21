@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OPTIONS="Hyprland\nRofi\nFastFetch\nlf\nwaybar\nkitty"
+OPTIONS="Hyprland\nRofi\nFastFetch\nlf\nwaybar\nkitty\nElephant\nWalker"
 
 SELECTION=$(echo -e "$OPTIONS" | rofi -dmenu -p "Configuration: ")
 
@@ -22,5 +22,11 @@ case "$SELECTION" in
   ;;
 "kitty")
   kitty nvim ~/.config/kitty/
+  ;;
+"Elephant")
+  kitty nvim ~/.config/elephant/
+  ;;
+"Walker")
+  kitty nvim ~/.config/walker/
   ;;
 esac
