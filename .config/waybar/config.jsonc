@@ -6,7 +6,7 @@
 
     "modules-left": ["hyprland/workspaces", "custom/platform-profile", "temperature", "cpu"],
     "modules-center": ["clock"],
-    "modules-right": ["wireplumber", "battery", "memory", "network", "tray"],
+    "modules-right": ["pulseaudio", "battery", "memory", "network", "tray"],
 
     "hyprland/workspaces": {
         "format": "<span size='larger'>{icon}</span>",
@@ -32,10 +32,23 @@
         "format": "{:%d.%m.%Y | %H:%M}"
     },
 
-    "wireplumber": {
-        "format": "\udb81\udd7e  {volume}%",
-        "max-volume": 100,
-        "scroll-step": 5
+    "pulseaudio": {
+        "on-click": "pavucontrol",
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": "󰸈 {icon} {format_source}",
+        "format-muted": "󰸈 {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
     },
 
     "battery": {
