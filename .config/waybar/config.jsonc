@@ -35,15 +35,15 @@
     "pulseaudio": {
         "on-click": "pavucontrol",
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon}  {format_source}",
         "format-bluetooth-muted": "󰸈 {icon} {format_source}",
         "format-muted": "󰸈 {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": "",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
@@ -68,7 +68,7 @@
     "cpu": {
 	    "interval": 2,
 	    "format": "{avg_frequency}MHz ",
-      "min-length": 20,
+      "min-length": 12,
 	    "max-length": 25
     },
 
