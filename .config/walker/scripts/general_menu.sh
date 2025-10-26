@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OPTIONS="General\nConfiguration\nClipboard History\nPower Menu"
+OPTIONS="General\nConfiguration\nArch Linux Packages\nClipboard History\nPower Menu"
 
 SELECTION=$(echo -e "$OPTIONS" | walker --dmenu -p "All: ")
 
@@ -11,8 +11,11 @@ case "$SELECTION" in
 "Configuration")
   ~/.config/walker/scripts/configuration.sh
   ;;
+"Arch Linux Packages")
+  walker -m archlinuxpkgs
+  ;;
 "Clipboard History")
-  cliphist list | walker --dmenu | cliphist decode | wl-copy
+  walker -m clipboard
   ;;
 "Power Menu")
   ~/.config/walker/scripts/power_menu.sh
