@@ -121,3 +121,5 @@ ssh-add -l &>/dev/null
 if [ "$?" = 1 ]; then
   ssh-add ~/.ssh/github
 fi
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

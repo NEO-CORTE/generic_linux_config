@@ -1,7 +1,15 @@
-@define-color foreground #eeeeee;
-@define-color foreground-inactive #aaaaaa;
-@define-color background #000000;
-@define-color active #50fa7b;
+@define-color foreground #FFECC0;
+@define-color foreground-inactive #FFC29B;
+@define-color background #B95E82;
+@define-color active #F39F9F;
+
+/*
+@define-color foreground #FFF2EF;
+@define-color foreground-inactive #FFDBB6;
+@define-color background #1A2A4F;
+@define-color active #F7A5A5;
+*/
+
 
 * {
     all: unset;
