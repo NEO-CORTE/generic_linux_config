@@ -2,13 +2,20 @@
 @define-color foreground-inactive #FFC29B;
 @define-color background #B95E82;
 @define-color active #F39F9F;
+/*
+@define-color foreground #5E59D9;
+@define-color foreground-inactive #676599;
+@define-color background #504F59;
+@define-color active #D9C359;
+*/
 
 /*
-@define-color foreground #FFF2EF;
-@define-color foreground-inactive #FFDBB6;
-@define-color background #1A2A4F;
-@define-color active #F7A5A5;
-*/
+@define-color active #A61F5E;
+@define-color active #590202;
+@define-color foreground-inactive #260101;
+@define-color foreground #0D0000;
+@define-color background #BF1111;
+*/ 
 
 
 * {

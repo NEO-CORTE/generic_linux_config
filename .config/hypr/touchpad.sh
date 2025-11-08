@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONF="$HOME/.dotfiles/.config/hypr/hyprland.conf"
+CONF="$HOME/.dotfiles/.config/hypr/input.conf"
 
 # Safely toggle the touchpad enabled setting
 sed -i '/device {/,/}/ {
@@ -10,7 +10,6 @@ sed -i '/device {/,/}/ {
     s/enabled = false/enabled = true/ # Otherwise, change false to true
   }
 }' "$CONF"
-
 
 echo $?
 echo $CONF
