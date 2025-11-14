@@ -2,6 +2,7 @@
 @define-color foreground-inactive #FFC29B;
 @define-color background #B95E82;
 @define-color active #F39F9F;
+
 /*
 @define-color foreground #5E59D9;
 @define-color foreground-inactive #676599;
@@ -70,4 +71,9 @@
 
 #temperature{
   padding-left: 1em
+}
+#custom-notification {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: "NotoSansMono Nerd Font";
 }

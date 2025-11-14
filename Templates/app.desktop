@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name={{_file_name_}}
+Comment={{_variable_}}
+Exec={{_variable_}}
+Icon={{_variable_}}
+Terminal=false
+Type=Application
+Categories={{_variable_}};
