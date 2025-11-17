@@ -1,7 +1,7 @@
 {
-  "layer": "top",
+  "layer": "bottom",
   "position": "top",
-  "height": 24,
+  "height": 30,
   "spacing": 5,
   "margin-top": 10,
   "margin-bottom": 0,
@@ -9,7 +9,7 @@
   "margin-right": 20,
 
   "modules-left": ["hyprland/workspaces", "custom/bar", "temperature", "custom/bar", "cpu", "custom/bar"],
-  "modules-center": ["clock", "custom/bar", "custom/config-menu"],
+  "modules-center": ["clock"],
   "modules-right": [ "custom/bar", "pulseaudio", "custom/bar", "battery", "custom/bar", "memory", "custom/bar", "network", "custom/bar", "tray"],
 
   "hyprland/workspaces": {
@@ -30,10 +30,6 @@
       "6": [],
       "7": [],
       }
-  },
-
-  "clock": {
-    "format": "{:%H:%M}"
   },
 
   "pulseaudio": {
@@ -89,13 +85,22 @@
     "icon-size": 16,
     "spacing": 16
   },
+
+  "clock": {
+    "interval": 1,
+    "justify": "center",
+    "format": "{:%H:%M}",
+    "on-click": "date '+%H:%M:%S %d/%m/%y' | wl-copy"
+  },
+
   "custom/bar":{
     "format": "|",
     "tooltip-format": "",
   },
-  "custom/config-menu":{
-    "format": "\u2699",
-    "tooltip-format": "Open config for waybar",
-    "on-click": "kitty nvim -c 'cd ~/.config/waybar/'"
-  }
+
+  //"custom/config-menu":{
+  //  "format": "\u2699",
+  //  "tooltip-format": "Open config for waybar",
+  //  "on-click": "nohup kitty nvim -c 'cd ~/.config/waybar/' &"
+  //}
 }

@@ -72,6 +72,7 @@
 
 #tray{
   padding-right: 1em;
+  min-width: 1.5em
 }
 
 #workspaces{
