@@ -1,6 +1,8 @@
 {
   "extras": [
     "lazyvim.plugins.extras.lang.kotlin",
+    "lazyvim.plugins.extras.lang.markdown",
+    "lazyvim.plugins.extras.lang.tailwind",
     "lazyvim.plugins.extras.lang.tex",
     "lazyvim.plugins.extras.util.dot"
   ],

@@ -1,8 +1,3 @@
-@define-color foreground #FFECC0;
-@define-color foreground-inactive #FFC29B;
-@define-color background #B95E82;
-@define-color active #F39F9F;
-
 /*
 @define-color foreground #5E59D9;
 @define-color foreground-inactive #676599;
@@ -16,64 +11,69 @@
 @define-color foreground-inactive #260101;
 @define-color foreground #0D0000;
 @define-color background #BF1111;
-*/ 
+*/
 
+@define-color background rgba(185, 94, 130, 1.0);
+@define-color background50 rgba(185, 94, 130, 0.5);
+@define-color foreground rgba(255, 236, 192, 1.0);
+@define-color foreground-inactive rgba(255, 194, 155, 1.0);
+@define-color active rgba(243, 159, 159, 1.0);
 
 * {
-    all: unset;
-    font-family: JetBrainsMono Nerd Font;
-    font-size: 17px;
-    padding: 0;
-    margin: 0;
+  all: unset;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 17px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
 }
 
 #waybar {
-    color: @foreground;
-    background-color: @background;
+  color: @foreground;
+  background: linear-gradient(0deg, @background50, @background, @background50);
 }
 
 #workspaces button {
-    color: @foreground;
-    padding-right: 0.6em;
-    padding-left: 0.2em;
+  color: @foreground;
+  padding-right: 0.35em;
+  padding-left: 0.35em;
 }
 
-#workspaces button.active:hover{
-    color: @foreground;
+#workspaces button.active:hover {
+  color: @foreground;
 }
 
 #workspaces button:hover {
-    color: @active;
+  color: @active;
 }
 
 #workspaces button.empty {
-    color: @foreground-inactive;
+  color: @foreground-inactive;
 }
 
-#memory,
-#custom-platform-profile {
-    padding-left: 1em
-}
-
-#wireplumber,
+#workspaces,
+#temperature,
+#cpu,
+#pulseaudio,
 #battery,
-#idle_inhibitor,
-#language,
+#memory,
 #network,
-#bluetooth,
-#tray {
-    padding-right: 1em 
-}
-
-#pulseaudio {
-    margin-right: 10
-}
-
-#temperature{
-  padding-left: 1em
-}
-#custom-notification {
+#tray,
+#clock,
+#custom-config-menu
+{
   padding-left: 1em;
   padding-right: 1em;
-  font-family: "NotoSansMono Nerd Font";
+}
+
+#cpu{
+  min-width: 100px;
+}
+
+#tray{
+  padding-right: 1em;
+}
+
+#workspaces{
+  padding-left: 0.5em;
 }
