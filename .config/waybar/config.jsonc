@@ -87,7 +87,7 @@
   },
 
   "clock": {
-    "interval": 1,
+    "interval": 60,
     "justify": "center",
     "format": "{:%H:%M}",
     "on-click": "date '+%H:%M:%S %d/%m/%y' | wl-copy"
@@ -98,9 +98,4 @@
     "tooltip-format": "",
   },
 
-  //"custom/config-menu":{
-  //  "format": "\u2699",
-  //  "tooltip-format": "Open config for waybar",
-  //  "on-click": "nohup kitty nvim -c 'cd ~/.config/waybar/' &"
-  //}
 }
