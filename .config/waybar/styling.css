@@ -1,24 +1,3 @@
-/*
-@define-color foreground #5E59D9;
-@define-color foreground-inactive #676599;
-@define-color background #504F59;
-@define-color active #D9C359;
-*/
-
-/*
-@define-color active #A61F5E;
-@define-color active #590202;
-@define-color foreground-inactive #260101;
-@define-color foreground #0D0000;
-@define-color background #BF1111;
-*/
-
-@define-color background rgba(185, 94, 130, 1.0);
-@define-color background50 rgba(185, 94, 130, 0.5);
-@define-color foreground rgba(255, 236, 192, 1.0);
-@define-color foreground-inactive rgba(255, 194, 155, 1.0);
-@define-color active rgba(243, 159, 159, 1.0);
-
 * {
   all: unset;
   font-family: Tektur;

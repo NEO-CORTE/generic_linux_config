@@ -1,0 +1,11 @@
+[Unit]
+Description=Autocombines file into /dev/shm for waybar config
+After=clocal-fs.target
+RequiresMountsFor=/dev/shm
+Before=graphical.target
+[Service]
+Type=oneshot
+ExecStart=/home/amaru/.config/waybar/scripts/init.sh
+ExecStop=/home/amaru/.config/waybar/scripts/dump.sh
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,5 @@
+@define-color active rgba(243, 159, 159, 1.0);
+@define-color background rgba(185, 94, 130, 1.0);
+@define-color background50 rgba(185, 94, 130, 0.5);
+@define-color foreground rgba(255, 236, 192, 1.0);
+@define-color foreground-inactive rgba(255, 194, 155, 1.0);
