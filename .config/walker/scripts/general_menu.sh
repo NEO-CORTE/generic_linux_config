@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/env bash
 
-OPTIONS="General\nConfiguration\nArch Linux Packages\nApps\nNotifications\nClipboard History\nPower Menu"
+OPTIONS="General\nConfiguration\nWaybar Color Scheme\nArch Linux Packages\nApps\nNotifications\nClipboard History\nPower Menu"
 
 SELECTION=$(echo -e "$OPTIONS" | walker --dmenu -p "All: ")
 
@@ -10,6 +10,9 @@ case "$SELECTION" in
   ;;
 "Configuration")
   ~/.config/walker/scripts/configuration.sh
+  ;;
+"Waybar Color Scheme")
+  ~/.config/waybar/scripts/swap.sh
   ;;
 "Arch Linux Packages")
   walker -m archlinuxpkgs

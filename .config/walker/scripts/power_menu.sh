@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 
 OPTIONS="Shutdown\nReboot\nSuspend\nLogout"
 
