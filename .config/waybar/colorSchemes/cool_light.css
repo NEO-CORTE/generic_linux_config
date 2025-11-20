@@ -1,0 +1,5 @@
+@define-color active rgba(0, 150, 136, 1.0); /* Teal/Aqua */
+@define-color background rgba(245, 248, 250, 1.0); /* Very Light Slate */
+@define-color background50 rgba(245, 248, 250, 0.5);
+@define-color foreground rgba(45, 62, 80, 1.0); /* Dark Slate Blue */
+@define-color foreground-inactive rgba(140, 158, 172, 1.0); /* Light Grey-Blue */

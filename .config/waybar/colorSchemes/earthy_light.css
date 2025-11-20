@@ -1,0 +1,5 @@
+@define-color active rgba(67, 160, 71, 1.0); /* Medium Green */
+@define-color background rgba(250, 245, 235, 1.0); /* Creamy Off-White */
+@define-color background50 rgba(250, 245, 235, 0.5);
+@define-color foreground rgba(70, 58, 45, 1.0); /* Dark Brown/Coffee */
+@define-color foreground-inactive rgba(150, 130, 100, 1.0); /* Tan */

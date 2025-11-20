@@ -1,0 +1,5 @@
+@define-color active rgba(255, 193, 7, 1.0); /* Gold */
+@define-color background rgba(28, 28, 48, 1.0); /* Deep Indigo */
+@define-color background50 rgba(28, 28, 48, 0.5);
+@define-color foreground rgba(240, 240, 255, 1.0); /* Off-White/Light Blue */
+@define-color foreground-inactive rgba(100, 100, 140, 1.0); /* Muted Blue-Grey */

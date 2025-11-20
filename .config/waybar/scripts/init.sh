@@ -1,7 +1,5 @@
 #!/bin/env bash
 
-mkdir -p /dev/shm/waybar/
-
 ENVFILE=/home/amaru/.config/waybar/scripts/color.env
 DEFAULT_COLORS="/home/amaru/.config/waybar/colorSchemes/pink.css"
 
@@ -13,6 +11,8 @@ else
 fi
 
 export WAYBAR_COLOR_SCHEME
+
+mkdir -p /dev/shm/waybar/
 
 cat /home/amaru/.config/waybar/config.jsonc >/dev/shm/waybar/waybar.jsonc
 cat "$WAYBAR_COLOR_SCHEME" /home/amaru/.config/waybar/styling.css >/dev/shm/waybar/style.css
