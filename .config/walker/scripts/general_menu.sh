@@ -1,18 +1,21 @@
 #!/bin/env bash
 
-OPTIONS="General\nConfiguration\nWaybar Color Scheme\nArch Linux Packages\nApps\nNotifications\nClipboard History\nPower Menu"
+OPTIONS="General\nConfiguration\nWaybar Color Scheme\nWallpaper\nArch Linux Packages\nApps\nNotifications\nBluetooth\nClipboard History\nPower Menu"
 
 SELECTION=$(echo -e "$OPTIONS" | walker --dmenu -p "All: ")
 
 case "$SELECTION" in
 "General")
-  walker
+  walker -m desktopapplications
   ;;
 "Configuration")
   ~/.config/walker/scripts/configuration.sh
   ;;
 "Waybar Color Scheme")
   ~/.config/waybar/scripts/swap.sh
+  ;;
+"Wallpaper")
+  ~/.config/hypr/scripts/wallpaper_swap.sh
   ;;
 "Arch Linux Packages")
   walker -m archlinuxpkgs
@@ -22,6 +25,9 @@ case "$SELECTION" in
   ;;
 "Notifications")
   ~/.config/walker/scripts/mako.sh
+  ;;
+"Bluetooth")
+  walker -m bluetooth
   ;;
 "Clipboard History")
   walker -m clipboard
