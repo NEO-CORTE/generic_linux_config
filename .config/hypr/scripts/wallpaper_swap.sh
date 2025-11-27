@@ -8,9 +8,7 @@ if [[ -n "$SELECTED_FILE" ]]; then
 
   FULL_PATH="$TARGET_DIR/$SELECTED_FILE"
 
-  ln -sf "$FULL_PATH" /dev/shm/wallpaper/wallpaper.jpg
+  echo -e "preload = $FULL_PATH\nwallpaper = ,$FULL_PATH" >"$HOME/.config/hypr/hyprpaper.conf"
 
-  echo -e "wallpaper = ,/dev/shm/wallpaper/\"$FULL_PATH\"" >"$HOME/.config/hypr/hyprpaper.conf"
-
-  hyprctl hyprpaper reload ",/dev/shm/wallpaper/wallpaper.jpg"
+  hyprctl hyprpaper reload ",$FULL_PATH"
 fi
