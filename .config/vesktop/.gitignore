@@ -1,0 +1,13 @@
+# Cookies
+SingletonCookie
+SingletonLock
+SingletonSocket
+
+# Crash logs
+Crashpad
+
+# Session Data
+sessionData
+
+# Extension Cache
+ExtensionCache

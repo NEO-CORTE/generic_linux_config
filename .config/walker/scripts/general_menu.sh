@@ -6,7 +6,7 @@ SELECTION=$(echo -e "$OPTIONS" | walker --dmenu -p "All: ")
 
 case "$SELECTION" in
 "General")
-  walker -m desktopapplications
+  walker
   ;;
 "Configuration")
   ~/.config/walker/scripts/configuration.sh
