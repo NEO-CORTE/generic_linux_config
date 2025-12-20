@@ -123,10 +123,4 @@ if [ "$?" = 1 ]; then
   ssh-add ~/.ssh/github
 fi
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - bash)"
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 eval "$(fzf --zsh)"

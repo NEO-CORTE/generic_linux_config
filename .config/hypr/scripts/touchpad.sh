@@ -11,8 +11,5 @@ sed -i '/device {/,/}/ {
   }
 }' "$CONF"
 
-echo $?
-echo $CONF
-
 # Reload Hyprland config
 hyprctl reload
