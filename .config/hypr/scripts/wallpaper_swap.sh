@@ -8,7 +8,7 @@ if [[ -n "$SELECTED_FILE" ]]; then
 
   FULL_PATH="$TARGET_DIR/$SELECTED_FILE"
 
-  echo -e "preload = $FULL_PATH\nwallpaper = ,$FULL_PATH" >"$HOME/.config/hypr/hyprpaper.conf"
+  echo -e "wallpaper{\n\tmonitor = \n\tpath = $FULL_PATH\n\tfit_mode = cover\n}\nsplash = false" >"$HOME/.config/hypr/hyprpaper.conf"
 
-  hyprctl hyprpaper reload ",$FULL_PATH"
+  hyprctl hyprpaper wallpaper ",$FULL_PATH,cover"
 fi
