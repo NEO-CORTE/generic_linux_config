@@ -11,7 +11,7 @@
 
     "modules-left": ["hyprland/workspaces", "custom/bar", "temperature", "custom/bar", "cpu", "custom/bar"],
     "modules-center": ["clock"],
-    "modules-right": [ "custom/bar", "pulseaudio", "custom/bar", "battery", "custom/bar", "memory", "custom/bar", "network", "custom/bar", "tray"],
+    "modules-right": [ "custom/bar", "pulseaudio", "custom/bar", "custom/bluetoothBAT", "custom/bar", "battery", "custom/bar", "memory", "custom/bar", "network", "custom/bar", "tray"],
 
     "hyprland/workspaces": {
       "format": "<span size='larger'>{icon}</span>",
@@ -93,6 +93,13 @@
       "justify": "center",
       "format": "{:%H:%M:%S}",
       "on-click": "date '+%H:%M:%S %d/%m/%y' | wl-copy"
+    },
+    
+    "custom/bluetoothBAT": {
+      "format": "  {}% ",
+      "interval": 15,
+      "exec": "bluetoothctl info 80:99:E7:CC:7A:3C | grep 'Battery Percentage' | awk '{ print $4 }' | tr -d '()'",
+      "tooltip": false
     },
 
     "custom/bar":{
