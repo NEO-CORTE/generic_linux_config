@@ -14,5 +14,5 @@ export WAYBAR_COLOR_SCHEME
 
 mkdir -p /dev/shm/waybar/
 
-cat /home/amaru/.config/waybar/config.jsonc >/dev/shm/waybar/waybar.jsonc
+ln -s "$HOME/.config/waybar/config.jsonc" /dev/shm/waybar/waybar.jsonc
 cat "$WAYBAR_COLOR_SCHEME" /home/amaru/.config/waybar/styling.css >/dev/shm/waybar/style.css
