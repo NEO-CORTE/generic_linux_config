@@ -11,7 +11,7 @@
 
     "modules-left": ["hyprland/workspaces", "custom/bar", "temperature", "custom/bar", "cpu", "custom/bar"],
     "modules-center": ["clock"],
-    "modules-right": [ "custom/bar", "pulseaudio", "custom/bar", "custom/bluetoothBAT", "custom/bar", "battery", "custom/bar", "memory", "custom/bar", "network", "custom/bar", "tray"],
+    "modules-right": [ "custom/bar", "pulseaudio", "custom/bluetoothBAT", "custom/bar", "battery", "custom/bar", "memory", "custom/bar", "network", "custom/bar", "tray"],
 
     "hyprland/workspaces": {
       "format": "<span size='larger'>{icon}</span>",

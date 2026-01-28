@@ -12,8 +12,6 @@ if [[ -n "$SELECTED_FILE" ]]; then
 
   cat "$FULL_PATH" "$HOME/.config/waybar/styling.css" >/dev/shm/waybar/style.css
 
-  cat "$WAYBAR_DIR/config.jsonc" >/dev/shm/waybar/waybar.jsonc
-
   echo -e "#!/bin/env bash\nexport WAYBAR_COLOR_SCHEME=\"$FULL_PATH\"" >"$HOME/.config/waybar/scripts/color.env"
 
   pkill -SIGUSR2 waybar
